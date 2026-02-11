@@ -1,0 +1,7 @@
+import pandas as pd
+import numpy as np
+
+df = pd.DataFrame(np.random.randn(10,4), columns=list("ABCD"))
+
+print(df)
+print("\nNOTE: Background black & font yellow styling works only in Jupyter Notebook.")
