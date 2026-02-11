@@ -1,0 +1,10 @@
+import matplotlib.pyplot as plt
+
+days = [1, 5, 10, 15, 20, 25, 31]
+prices = [768, 775, 770, 780, 785, 790, 795]
+
+plt.plot(days, prices)
+plt.xlabel("October 2016 (Days)")
+plt.ylabel("Stock Price (USD)")
+plt.title("Alphabet Inc. Stock Trends (Oct 2016)")
+plt.show()
