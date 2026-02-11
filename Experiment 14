@@ -1,0 +1,14 @@
+
+import pandas as pd
+import numpy as np
+
+df = pd.DataFrame({
+    "A": [1, np.nan, 3],
+    "B": [np.nan, 5, 6]
+})
+
+print("Original:\n", df)
+
+df = df.fillna(0)
+
+print("\nAfter replacing NaN with 0:\n", df)
