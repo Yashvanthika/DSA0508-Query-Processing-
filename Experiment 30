@@ -1,0 +1,15 @@
+import matplotlib.pyplot as plt
+
+labels = ["Group A", "Group B", "Group C"]
+men = [20, 35, 30]
+women = [25, 32, 34]
+error = [2, 3, 4]
+
+plt.bar(labels, men, yerr=error, label="Men")
+plt.bar(labels, women, bottom=men, yerr=error, label="Women")
+
+plt.xlabel("Groups")
+plt.ylabel("Count")
+plt.title("Stacked Bar Plot with Error Bars")
+plt.legend()
+plt.show()
