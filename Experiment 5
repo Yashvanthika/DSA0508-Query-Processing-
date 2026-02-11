@@ -1,0 +1,11 @@
+import pandas as pd
+import yfinance as yf
+import matplotlib.pyplot as plt
+
+stock = yf.download("GOOGL", start="2023-01-01", end="2023-03-01")
+
+stock["Volume"].plot(kind="bar")
+plt.title("Alphabet Trading Volume")
+plt.xlabel("Date")
+plt.ylabel("Volume")
+plt.show()
