@@ -1,0 +1,24 @@
+import matplotlib.pyplot as plt
+
+x = []
+y = []
+
+# Reading data from external text file
+with open("ex23.txt", "r") as file:
+    for line in file:
+        a, b = line.split()
+        x.append(int(a))
+        y.append(int(b))
+
+# Plotting line graph
+plt.plot(x, y)
+plt.xlabel("X Coordinates")
+plt.ylabel("Y Coordinates")
+plt.title("Line Graph from External Text File")
+plt.show()
+#text file
+1 2
+2 4
+3 6
+4 8
+5 10
