@@ -1,0 +1,11 @@
+import pandas as pd
+import yfinance as yf
+import matplotlib.pyplot as plt
+
+stock = yf.download("GOOGL", start="2023-01-01", end="2023-06-01")
+
+stock["Close"].plot()
+plt.title("Alphabet Stock Price")
+plt.xlabel("Date")
+plt.ylabel("Close Price")
+plt.show()
