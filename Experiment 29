@@ -1,0 +1,11 @@
+import matplotlib.pyplot as plt
+
+languages = ["Python", "Java", "C", "C++"]
+popularity = [90, 75, 65, 60]
+colors = ["red", "blue", "green", "orange"]
+
+plt.bar(languages, popularity, color=colors)
+plt.xlabel("Languages")
+plt.ylabel("Popularity")
+plt.title("Bar Chart with Unique Colors")
+plt.show()
