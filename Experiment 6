@@ -1,0 +1,11 @@
+import pandas as pd
+import yfinance as yf
+import matplotlib.pyplot as plt
+
+data = yf.download("GOOGL", start="2023-01-01", end="2023-04-01")
+
+plt.scatter(data["Close"], data["Volume"])
+plt.xlabel("Stock Price (Close)")
+plt.ylabel("Trading Volume")
+plt.title("Alphabet Stock: Price vs Volume")
+plt.show()
