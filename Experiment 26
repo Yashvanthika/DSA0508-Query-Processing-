@@ -1,0 +1,14 @@
+import matplotlib.pyplot as plt
+
+x = [1, 2, 3, 4, 5]
+
+plt.subplot(2, 1, 1)
+plt.plot(x, [i*i for i in x])
+plt.title("Square Values")
+
+plt.subplot(2, 1, 2)
+plt.plot(x, [i*i*i for i in x])
+plt.title("Cube Values")
+
+plt.tight_layout()
+plt.show()
