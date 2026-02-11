@@ -1,0 +1,15 @@
+import pandas as pd
+
+data = {
+    "Item": ["TV","TV","Phone","TV","Phone","TV"],
+    "Units": [95,36,27,56,64,75]
+}
+
+df = pd.DataFrame(data)
+
+pivot = pd.pivot_table(df,
+                       index="Item",
+                       values="Units",
+                       aggfunc="sum")
+
+print(pivot)
